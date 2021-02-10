@@ -1,0 +1,52 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.my-pokedex {
+    padding: .5rem;
+}
+
+.a-pokemon {
+    display: grid;
+    grid-template-columns: repeat(12, calc(100% / 12));
+    margin: 1rem;
+}
+
+.a-pokemon * {
+    border: .1rem solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: .3rem;
+}
+
+.a-pokemon-id {
+    background-color: rgb(253, 101, 101);
+    grid-column: span 2;
+}
+
+.a-pokemon-name {
+    background-color: rgb(224, 224, 127);
+    grid-column: span 5;
+}
+
+.a-pokemon-type {
+    background-color: lightseagreen;
+    grid-column: span 5;
+}
+
+.a-pokemon-status {
+    background-color: lightpink;
+    grid-column: span 3;
+}
+
+.a-pokemon-alt-name {
+    background-color: rgb(158, 180, 240);
+    grid-column: span 4;
+    /* color: white; */
+    font-size: 1.3rem;
+}
